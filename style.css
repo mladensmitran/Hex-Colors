@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Roboto:wght@500;700&family=Sofia+Sans+Condensed:wght@400;500&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hex-colors{
+    text-align: center;
+}
+
+.hex-colors h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    animation: colorchange 5s infinite alternate;
+}
+
+.hex-colors h2{
+    font-size: 2rem;
+    margin-top: 15%;
+}
+
+
+@keyframes colorchange{
+    0%{
+        color: indigo;
+    }
+    20%{
+        color: blue;
+    }
+    40%{
+        color: green;
+    }
+    60%{
+        color: yellow;
+    }
+    80%{
+        color: orange;
+    }
+    100%{
+        color: red;
+    }
+    
+}
+
+/*Responsive Design Testing to check how image would look at different pixels. UPDATE...website does not work for responsive design testing*/
+
+@media(max-width:480px) {
+    .hex-colors h1{
+        font-size: 1.5rem;
+    }
+
+    .hex-colors h2{
+        font-size: 1.5rem;
+    }
+    
+}
